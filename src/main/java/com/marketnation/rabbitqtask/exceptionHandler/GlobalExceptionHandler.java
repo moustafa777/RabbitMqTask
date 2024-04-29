@@ -1,4 +1,4 @@
-package com.example.rabbitqtask.exceptionHandler;
+package com.marketnation.rabbitqtask.exceptionHandler;
 
 
 import org.springframework.web.bind.annotation.ExceptionHandler;

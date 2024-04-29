@@ -1,4 +1,4 @@
-package com.example.rabbitqtask.configs;
+package com.marketnation.rabbitqtask.configs;
 
 
 import org.springframework.amqp.core.Queue;
@@ -11,7 +11,7 @@ public class RabbitConfig {
 
     @Bean
     public Queue queue() {
-        return new Queue("randomQueue", false);
+        return new Queue("randomNumberQueue", false);
     }
 
 

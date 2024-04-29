@@ -1,8 +1,8 @@
-package com.example.rabbitqtask.services;
+package com.marketnation.rabbitqtask.services;
 
-import com.example.rabbitqtask.models.RandomNumberEntity;
-import com.example.rabbitqtask.models.ResultEntity;
-import com.example.rabbitqtask.repos.ResultRepo;
+import com.marketnation.rabbitqtask.models.RandomNumberEntity;
+import com.marketnation.rabbitqtask.models.ResultEntity;
+import com.marketnation.rabbitqtask.repos.ResultRepo;
 import org.springframework.stereotype.Service;
 
 @Service

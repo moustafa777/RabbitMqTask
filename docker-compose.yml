@@ -43,7 +43,7 @@ services:
       SPRING_RABBITMQ_PASSWORD: guest
       SPRING_RABBITMQ_QUEUE: random-number-queue
       SCHEDULER_INTERVAL: 1000
-      QUEUE_NAME: randomQueue
+      QUEUE_NAME: randomNumberQueue
 
 
 

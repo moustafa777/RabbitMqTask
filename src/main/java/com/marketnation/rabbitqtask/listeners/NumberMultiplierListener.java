@@ -1,8 +1,8 @@
-package com.example.rabbitqtask.listeners;
+package com.marketnation.rabbitqtask.listeners;
 
-import com.example.rabbitqtask.models.RandomNumberEntity;
-import com.example.rabbitqtask.services.GenerateRandomNumberService;
-import com.example.rabbitqtask.services.ResultService;
+import com.marketnation.rabbitqtask.models.RandomNumberEntity;
+import com.marketnation.rabbitqtask.services.GenerateRandomNumberService;
+import com.marketnation.rabbitqtask.services.ResultService;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +19,7 @@ public class NumberMultiplierListener {
         this.generateRandomNumberService = generateRandomNumberService;
     }
     @RabbitListener(queues =  "${queue.name}")
-    public void receiveMessage(String message) {
+    public void receiveMessage(String message) throws Exception {
         logger.info("Received message: " + message);
         RandomNumberEntity randomNumberEntity = generateRandomNumberService.mapFromJson(message);
         logger.info("Random number entity: " + randomNumberEntity);
