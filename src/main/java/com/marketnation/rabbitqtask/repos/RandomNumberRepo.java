@@ -1,6 +1,6 @@
-package com.example.rabbitqtask.repos;
+package com.marketnation.rabbitqtask.repos;
 
-import com.example.rabbitqtask.models.RandomNumberEntity;
+import com.marketnation.rabbitqtask.models.RandomNumberEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

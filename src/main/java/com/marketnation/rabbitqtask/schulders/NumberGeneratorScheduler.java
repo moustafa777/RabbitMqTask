@@ -1,7 +1,7 @@
-package com.example.rabbitqtask.schulders;
+package com.marketnation.rabbitqtask.schulders;
 
-import com.example.rabbitqtask.models.RandomNumberEntity;
-import com.example.rabbitqtask.services.GenerateRandomNumberService;
+import com.marketnation.rabbitqtask.models.RandomNumberEntity;
+import com.marketnation.rabbitqtask.services.GenerateRandomNumberService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import org.springframework.amqp.core.Queue;

@@ -1,7 +1,7 @@
-package com.example.rabbitqtask.services;
+package com.marketnation.rabbitqtask.services;
 
-import com.example.rabbitqtask.models.RandomNumberEntity;
-import com.example.rabbitqtask.repos.RandomNumberRepo;
+import com.marketnation.rabbitqtask.models.RandomNumberEntity;
+import com.marketnation.rabbitqtask.repos.RandomNumberRepo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
@@ -24,13 +24,14 @@ public class GenerateRandomNumberService {
         return mapper.writeValueAsString(randomNumberEntity);
     }
 
-    public RandomNumberEntity mapFromJson(String message) {
+    public RandomNumberEntity mapFromJson(String message) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         RandomNumberEntity randomNumberEntity = null;
         try {
             randomNumberEntity = mapper.readValue(message, RandomNumberEntity.class);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
+            throw new Exception(e);
     }
         return randomNumberEntity;
     }
